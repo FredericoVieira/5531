@@ -36,7 +36,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15% 90px;
+  margin: 15% 10%;
 }
 
 .presentation img {
@@ -54,12 +54,22 @@
   text-transform: uppercase;
 }
 
-.presentation .description {
+.presentation .short-description {
   font-size: 100px;
   line-height: 90.5%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #353535;
+  margin-bottom: 10%;
+}
+
+.presentation .description {
+  font-size: 20px;
+  max-width: 310px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  line-height: 24px;
+  letter-spacing: 0.035em;
 }
 
 @media only screen and (max-device-width: 640px) {
@@ -82,9 +92,55 @@
     font-size: 24px;
   }
 
-  .presentation .description {
+  .presentation .short-description {
     font-size: 50px;
   }
+}
+
+.shop-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #353535;
+  padding: 40px 15%;
+}
+
+.shop-now .title {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 127%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.shop-now a {
+  text-decoration: none;
+}
+
+.button {
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 20px 40px;
+  max-width: 160px;
+  text-align: center;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  transition: border 0.15s ease-in-out;
+}
+
+.product img {
+  width: 100%;
+  margin-bottom: -5px;
 }
 
 /* .footer {

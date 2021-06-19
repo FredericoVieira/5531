@@ -27,10 +27,57 @@ export default function Home() {
           <img src="/presentation.png" alt="presentation 5531" />
           <div className={styles.content}>
             <h1 className={styles.title}>Cachaça brasileira</h1>
+            <h2 className={styles["short-description"]}>
+              De um jeito que você nunca viu
+            </h2>
+            <p className={styles.description}>
+              Bebiba mista de cachaça saborizada com os melhores ingredientes.
+            </p>
+            <p className={styles.description}>
+              Sirva gelada. Ideal para dividir com pessoas ou suas
+              personalidades.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles["shop-now"]}>
+          <h2 className={styles.title}>Para uma experiência única</h2>
+          <a
+            href="https://api.whatsapp.com/send?phone=5531984233332&text=Quero%20um%20experi%C3%AAncia%20%C3%BAnica!"
+            target="blank"
+          >
+            <div className={styles.button}>Compre agora</div>
+          </a>
+        </section>
+
+        <section className={styles.product}>
+          <img src="/p1.png" alt="product cachaça honey" />
+          {/* <div className={styles.content}>
+            <h1 className={styles.title}>Cachaça brasileira</h1>
             <h1 className={styles.description}>
               De um jeito que você nunca viu
             </h1>
-          </div>
+          </div> */}
+        </section>
+
+        <section className={styles.product}>
+          <img src="/p2.png" alt="product cachcaça" />
+          {/* <div className={styles.content}>
+            <h1 className={styles.title}>Cachaça brasileira</h1>
+            <h1 className={styles.description}>
+              De um jeito que você nunca viu
+            </h1>
+          </div> */}
+        </section>
+
+        <section className={styles.product}>
+          <img src="/p3.png" alt="product cachcaça pink-lemonade" />
+          {/* <div className={styles.content}>
+            <h1 className={styles.title}>Cachaça brasileira</h1>
+            <h1 className={styles.description}>
+              De um jeito que você nunca viu
+            </h1>
+          </div> */}
         </section>
 
         {/* <h1 className={styles.title}>
