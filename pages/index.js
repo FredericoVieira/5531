@@ -13,6 +13,7 @@ export default function Home() {
         <section className={styles.video}>
           <video
             playsinline
+            webkit-playsinline
             autoPlay
             muted
             loop
