@@ -16,6 +16,16 @@ export default function Home() {
           </video>
         </section>
 
+        <section className={styles.presentation}>
+          <img src="/presentation.png" alt="presentation 5531" />
+          <div className={styles.content}>
+            <h1 className={styles.title}>Cachaça brasileira</h1>
+            <h1 className={styles.description}>
+              De um jeito que você nunca viu
+            </h1>
+          </div>
+        </section>
+
         {/* <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
