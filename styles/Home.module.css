@@ -1,19 +1,30 @@
-.container {
+/* .container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.main {
+/* .main {
   padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+} */
+
+.video {
+  height: 100vh;
+}
+
+.video-content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* position: 'absolute' */
 }
 
 .footer {
@@ -35,7 +46,7 @@
   align-items: center;
 }
 
-.title a {
+/* .title a {
   color: #0070f3;
   text-decoration: none;
 }
@@ -119,4 +130,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */
