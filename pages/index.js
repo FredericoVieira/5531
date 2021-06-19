@@ -11,7 +11,13 @@ export default function Home() {
 
       <main className={styles.main}>
         <section className={styles.video}>
-          <video autoPlay muted loop className={styles["video-content"]}>
+          <video
+            playsinline
+            autoPlay
+            muted
+            loop
+            className={styles["video-content"]}
+          >
             <source src="/video-intro.mp4" type="video/mp4" />
           </video>
         </section>

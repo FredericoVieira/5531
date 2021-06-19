@@ -14,3 +14,14 @@ body {
   margin: 0;
   font-family: Source Sans Pro, Roboto, Helvetica Neue, sans-serif;
 }
+
+body {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
