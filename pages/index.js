@@ -5,15 +5,23 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Cachaça 5531</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Cachaça 5531, experiência única em cachaça"
+        />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
       </Head>
 
       <main className={styles.main}>
         <section className={styles.video}>
           <video
-            playsinline
-            webkit-playsinline
+            playsInline
+            webkit-playsInline
             autoPlay
             muted
             loop
@@ -24,7 +32,7 @@ export default function Home() {
         </section>
 
         <section className={styles.presentation}>
-          <img src="/presentation.png" alt="presentation 5531" />
+          <img src="/presentation.png" alt="5531 apresentação" />
           <div className={styles.content}>
             <h1 className={styles.title}>Cachaça brasileira</h1>
             <h2 className={styles["short-description"]}>
@@ -34,14 +42,14 @@ export default function Home() {
               Bebiba mista de cachaça saborizada com os melhores ingredientes.
             </p>
             <p className={styles.description}>
-              Sirva gelada. Ideal para dividir com pessoas ou suas
-              personalidades.
+              Ideal para dividir com pessoas ou suas personalidades. Sirva
+              gelada.
             </p>
           </div>
         </section>
 
         <section className={styles["shop-now"]}>
-          <h2 className={styles.title}>Para uma experiência única</h2>
+          <h3 className={styles.title}>Para uma experiência única</h3>
           <a
             href="https://api.whatsapp.com/send?phone=5531984233332&text=Quero%20um%20experi%C3%AAncia%20%C3%BAnica!"
             target="blank"
@@ -51,7 +59,7 @@ export default function Home() {
         </section>
 
         <section className={styles.product}>
-          <img src="/p1.png" alt="product cachaça honey" />
+          <img src="/p1.png" alt="Cachaça honey" />
           {/* <div className={styles.content}>
             <h1 className={styles.title}>Cachaça brasileira</h1>
             <h1 className={styles.description}>
@@ -61,7 +69,7 @@ export default function Home() {
         </section>
 
         <section className={styles.product}>
-          <img src="/p2.png" alt="product cachcaça" />
+          <img src="/p2.png" alt="Cachaça" />
           {/* <div className={styles.content}>
             <h1 className={styles.title}>Cachaça brasileira</h1>
             <h1 className={styles.description}>
@@ -71,7 +79,7 @@ export default function Home() {
         </section>
 
         <section className={styles.product}>
-          <img src="/p3.png" alt="product cachcaça pink-lemonade" />
+          <img src="/p3.png" alt="Cachaça pink-lemonade" />
           {/* <div className={styles.content}>
             <h1 className={styles.title}>Cachaça brasileira</h1>
             <h1 className={styles.description}>
