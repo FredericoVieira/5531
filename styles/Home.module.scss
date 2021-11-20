@@ -1,0 +1,128 @@
+// Video section
+.video {
+  height: 100vh;
+
+  @media only screen and (max-device-width: 640px) {
+    height: 50vh;
+  }
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+// Presentation section
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15% 10%;
+
+  &__image {
+    width: 50%;
+  }
+
+  &__content {
+    text-align: right;
+
+    &__title {
+      font-weight: 300;
+      font-size: 48px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    &__short-description {
+      font-size: 100px;
+      line-height: 90.5%;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: #353535;
+      margin-bottom: 10%;
+    }
+
+    &__description {
+      font-size: 20px;
+      max-width: 330px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      line-height: 24px;
+      letter-spacing: 0.035em;
+    }
+  }
+
+  @media only screen and (max-device-width: 640px) {
+    flex-direction: column;
+    margin: 15% 10%;
+
+    &__image {
+      width: 90%;
+      margin: 10% auto;
+      order: 2;
+    }
+
+    &__content {
+      text-align: center;
+
+      &__title {
+        font-size: 24px;
+      }
+
+      &__short-description {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+// Shop now section
+.shop-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #353535;
+  padding: 40px 15%;
+
+  &__title {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 127%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &__button {
+      border: 1px solid #fff;
+      background-color: transparent;
+      padding: 20px 40px;
+      max-width: 160px;
+      text-align: center;
+      cursor: pointer;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      transition: border 0.15s ease-in-out;
+    }
+  }
+}
+
+// Product section
+.product {
+  &__image {
+    width: 100%;
+    margin-bottom: -5px;
+  }
+}
