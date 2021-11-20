@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Controller, Scene } from "react-scrollmagic";
-import { Tween, SplitLetters } from "react-gsap";
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
