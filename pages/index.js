@@ -1,8 +1,15 @@
-import Head from "next/head";
+import { useState, useEffect } from "react";
 import { Controller, Scene } from "react-scrollmagic";
+import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
+  const [isDesktop, setIsDesktop] = useState(true);
+
+  useEffect(() => {
+    if (window.innerWidth <= 640) setIsDesktop(false);
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -75,36 +82,39 @@ export default function Home() {
         </section>
 
         <Controller globalSceneOptions={{ triggerHook: "onLeave" }}>
-          <Scene pin>
-            <section className={styles.product}>
-              <img
-                src="/cachaca-honey.png"
-                alt="Cachaça honey"
-                className={styles["product__image"]}
-              />
-            </section>
-          </Scene>
+          <div>
+            <Scene pin enabled={isDesktop}>
+              <section className={styles.product}>
+                <img
+                  src="/cachaca-honey.png"
+                  alt="Cachaça honey"
+                  className={styles["product__image"]}
+                />
+              </section>
+            </Scene>
 
-          <Scene pin>
-            <section className={styles.product}>
-              <img
-                src="/cachaca.png"
-                alt="Cachaça"
-                className={styles["product__image"]}
-              />
-            </section>
-          </Scene>
+            <Scene pin enabled={isDesktop}>
+              <section className={styles.product}>
+                <img
+                  src="/cachaca.png"
+                  alt="Cachaça"
+                  className={styles["product__image"]}
+                />
+              </section>
+            </Scene>
 
-          <Scene pin>
-            <section className={styles.product}>
-              <img
-                src="/cachaca-pink-lemonade.png"
-                alt="Cachaça pink-lemonade"
-                className={styles["product__image"]}
-              />
-            </section>
-          </Scene>
+            <Scene pin enabled={isDesktop}>
+              <section className={styles.product}>
+                <img
+                  src="/cachaca-pink-lemonade.png"
+                  alt="Cachaça pink-lemonade"
+                  className={styles["product__image"]}
+                />
+              </section>
+            </Scene>
+          </div>
         </Controller>
+        <footer className={styles.footer}>5531&reg;</footer>
       </main>
     </div>
   );
